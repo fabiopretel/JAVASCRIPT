@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Lisboa</title>
+</head>
+<body>
+    <h1>Vezes em que o Lisboa faz gracinha</h1>
+    <p id="contador">0</p>
+    <button id="botao">Somar</button>
+
+    <script>
+        let contador = 0 //Inicializa o contador
+
+        // Adiciona um ouvinte de evento de clique ao botão
+        const contadorElemento = document.getElementById('contador')
+        const botao = document.getElementById('botao')
+
+        // Adiciona um ouvinte de evento de clique ao botão
+        botao.addEventListener('click', function() {
+            contador++; // Incrementa o contador
+            contadorElemento.textContent = contador; // Atualiza o elemento do contador com o novo valor
+        });
+    </script>
+</body>
+</html>
