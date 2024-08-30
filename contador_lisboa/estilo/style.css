@@ -33,4 +33,6 @@ button{
 button:hover{
     transform: translate(2px, -2px);
     transition: 0.3s;
+    background-color: black;
+    color: white;
 }
