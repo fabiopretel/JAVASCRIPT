@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            font-weight: normal;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formatando Números</h1>
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        var salario = Number(window.prompt('Qual o valor do seu salário?'))
+        document.write(`Olá, <strong>${nome}</strong> Seu nome tem ${nome.length} letras.<br>`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}<br>`)
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}<br><br>`)
+        document.write(`Seu salário em: <br>
+                        ${salario.toLocaleString('pt-br', {style:'currency',currency:'BRL'})} reais <br>
+                        ${salario.toLocaleString('pt-br', {style:'currency',currency:'USD'})} dólares <br>
+                        ${salario.toLocaleString('pt-br', {style:'currency',currency:'EUR'})} euros`)
+        /*
+        var n1 = 1543.5
+            - n1
+            - n1.toFixed(2)             (números depois da vírgula)
+            - n1.toLocaleString('pt-br', {style: 'currency', currency:'BRL'})
+                (mostra o simbolo monetário de cada país, BRL/USD/EUR)
+        */
+    </script>
+</body>
+</html>
