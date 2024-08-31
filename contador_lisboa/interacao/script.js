@@ -14,4 +14,3 @@ botao.addEventListener('click', function() {
     contadorElemento.textContent = contador; // Atualiza o elemento do contador com o novo valor
     localStorage.setItem('contador', contador); // Salva o novo valor no localStorage
 });
-
