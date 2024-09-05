@@ -18,11 +18,11 @@ h1{
 }
 p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 20em;
+    font-size: 10em;
     font-weight: bold;
 }
 button{
-    width: 200px;
+    width: 250px;
     height: 75px;
     font-family: sans-serif;
     font-weight: bold;
