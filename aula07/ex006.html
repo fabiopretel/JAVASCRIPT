@@ -3,18 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Operadores</title>
+    <title>Operadores Aritméticos e Atribuição</title>
 </head>
 <body>
     <script>
         /*
-        5 + 2 = 7
-        5 - 2 = 3
-        5 * 2 = 10
-        5 / 2 = 2.5
-        5 % 2 = 1
-        5 ** 2 = 25
+        5 + 2 = 7 (soma)
+        5 - 2 = 3 (subtração)
+        5 * 2 = 10 (multiplicação)
+        5 / 2 = 2.5 (divisão)
+        5 % 2 = 1 (divisão inteira)
+        5 ** 2 = 25 (elevação)
+
+        ordem de precedência:
+        1º    ()
+        2º    **
+        3º    * / % 
+        4º    + -
         */
+
+        var a = 5 + 3           // 8
+        var b = a % 5           // 3
+        var c = 5 * b ** 2      // 45
+        var d = 10 - a / 2      // 6
+        var e = 6 * 2 / d       // 2
+        var f = b 5 e + 4 / e   // 3
+
+        var n = 3 
+        n = n + 4 (n+=4)    // 7
+        n = n - 5 (n-=4)    // 2
+        n = n * 4 (n*=4)    // 8
+        n = n / 2 (n/=4)    // 4
+        n = n ** 2 (n**=4)  //16
+        n = n % 5 (n%=4)    // 1 >>> 16/5=3 >>> 3*5=15 >>> 16-15=1
+
+        var x = 5
+        x = x + 1 (x++)
+        x = x - 1 (x--)
     </script>
 </body>
 </html>
