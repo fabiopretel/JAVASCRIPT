@@ -40,7 +40,12 @@ botao.addEventListener('click', function() {
     contadorElemento.textContent = contador; // Atualiza o elemento do contador com o novo valor
     localStorage.setItem('contador', contador); // Salva o novo valor no localStorage
 
-    if (contador === 100) { // Dispara os confetes quando o contador atingir 100
+    if (contador === 100 || 
+        contador === 500 || 
+        contador === 1000 || 
+        contador === 2000 || 
+        contador === 5000 || 
+        contador === 10000) { // Dispara os confetes quando o contador atingir 100
         triggerConfetti();
     }
 });
