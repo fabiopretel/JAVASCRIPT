@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Relacionais/ Lógicos/ Ternário</title>
+</head>
+<body>
+    <script>
+        /*
+        Relacionais:
+        5   >   2   =   true
+        7   <   4   =   false
+        8   >=  8   =   true
+        9   <=  7   =   false
+        5   ==  5   =   true
+        4   !=  4   =   false
+        */
+
+        //Exemplos:
+        preço >= 200.50             // o preço é maior ou igual a 200.50?
+        idade < 18                  // idade é menor que 18?
+        curso == 'JavaScript'       // curso é igual a JavaScript?
+        n1 != n2                    // n1 é diferente de n2
+
+        /*
+        Identidade:
+        5   =    5   true
+        5   =   '5'  true
+        5  ===  '5'  false
+        5  ===   5   true    
+        */
+
+        /*
+        Lógicos:
+        !   negação
+        &&  conjunção
+        ||  disjunção
+
+            Negação:
+            ! true = false
+            ! false = true
+
+            Conjunção:
+            true   &&   true    =   true
+            true   &&   false   =   false
+            false  &&   true    =   false
+            false  &&   false   =   false
+
+            Disjunção:
+            true   ||   true    =   true
+            true   ||   false   =   true
+            false  ||   true    =   true
+            false  ||   false   =   false
+        */
+
+        //Exemplos:
+        idade >= 15 && idade <= 17          // idade esta entre 15 e 17?
+        estado == 'RJ' || estado == 'SP'    // o estado é RJ ou SP?
+        salario > 1500 && sexo != 'M'       // o salário é acima de 1500 e não é homem?
+
+        /*
+        Ternário:
+            teste       ?       true        :       false
+        media >= 7.0    ?    "Aprovado"     :    "Reprovado"
+        */
+    </script>
+</body>
+</html>
