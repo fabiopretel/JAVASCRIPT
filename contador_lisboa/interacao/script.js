@@ -56,3 +56,23 @@ reduz.addEventListener('click', function() {
     contadorElemento.textContent = contador; // Atualiza o elemento do contador com o novo valor
     localStorage.setItem('contador', contador); // Salva o novo valor no localStorage
 });
+
+function timeSince(startDate) {
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = now - startDate.getTime();
+
+      // Cálculos para dias, horas, minutos e segundos
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Atualizar o conteúdo do elemento com id="time"
+      document.getElementById('time').innerHTML = `${days} dias ${hours}:${minutes}:${seconds}`;
+    }, 1000); // Atualiza a cada segundo (1000 ms)
+  }
+
+  // Defina a data de início (exemplo: 1 de janeiro de 2024)
+  const startDate = new Date('Aug 27, 2024 00:00:00');
+  timeSince(startDate);
