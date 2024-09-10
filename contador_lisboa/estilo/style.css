@@ -75,3 +75,7 @@ button:hover{
 #time{
     margin-top: 5px;
 }
+footer > p{
+    margin: 10px;
+    display: none;
+}
