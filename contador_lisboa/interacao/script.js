@@ -76,3 +76,10 @@ function timeSince(startDate) {
   // Defina a data de início (exemplo: 1 de janeiro de 2024)
   const startDate = new Date('Aug 27, 2024 00:00:00');
   timeSince(startDate);
+
+  //easter egg - cara do lisboa no fundo
+  function egg1(){
+    var corpo = window.document.body
+    corpo.style.background = 'url(imagens/lisboa_egg1.png) no-repeat center center fixed'
+    corpo.style.backgroundSize = '500px'
+  }
