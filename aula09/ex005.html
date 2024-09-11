@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18pt;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        /*
+            Árvore DOM:
+                                                > meta
+                                         > head > title
+            window     > document > html > body > h1
+                                                > p
+                                                > p > strong
+                                                > div
+            window     > history
+
+            window     > location
+ 
+            Selecionando:
+                - por Marca     > getElementsByTagName()
+                - por ID        > getElementById()
+                - por Nome      > getElementByName()
+                - por Classe    > getElementByClassName()
+                - por Seletor   > querySelector() / querySelectorAll()
+       */
+       //window.document.write('Olá, Mundo!' + '<br><br>') //escrevendo qualquer coisa
+
+       //window.document.write(window.document.charset + '<br>') //mostrando charset
+       //window.document.write(window.navigator.appName + '<br>') //mostrando nome do navegador
+       //window.document.write(window.document.URL + '<br><br>') //mostrando a URL
+
+       var corpo =  window.document.body //declarou o body como uma variavel possibilitando editar
+       var p1 = document.getElementsByTagName('p')[1] //0 seleciona o primeiro 'p' e 1... seleciona o próximo
+       //var d = document.getElementById('msg') //seleciona o item com a id 'msg'
+
+       //window.document.write('Está escrito assim: ' + p1.innerText + '<br>')
+       //mostra na tela o que tem na 'var p1' Text sem formatação
+       //window.document.write('Está escrito assim: ' + p1.innerHTML)
+       //mostra na tela o que tem na 'var p1' HTML com formatação
+
+       //corpo.style.background = 'black' //muda a cor de background
+       //p1.style.color = 'blue' //muda a cor de p1
+       //d.style.background = 'green' //muda a cor da variavel 'd'
+       //d.innerText = 'Estou aguardando...' //escrevendo na tela
+       //ou
+       //window.document.getElementById('msg').innerText = 'Estou aguardando...'
+
+       //var d = window.document.querySelector('#msg')
+       //d.style.color = 'blue'
+       //d.style.background = 'skyblue'
+    </script>
+</body>
+</html>
