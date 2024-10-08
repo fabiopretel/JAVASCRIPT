@@ -16,11 +16,11 @@
             var txtp = document.getElementById('txtpais')
             var res = document.getElementById('res')
             var pais = String(txtp.value)
-            res.innerHTML = `<p>Vivendo em <strong>${pais}</strong>, </p>`
+            res.innerHTML = `<p>Vivendo em <strong>${pais.toLowerCase()}</strong>, </p>`
             if (pais.toLowerCase() == 'brasil'){
-                res.innerHTML += `<p>você é <strong>brasileiro!</strong></p>`
+                res.innerHTML += `<p>Você é <strong>brasileiro!</strong></p>`
             } else {
-                res.innerHTML += `<p>você é <strong>estrangeiro!</strong></p>`
+                res.innerHTML += `<p>Você é <strong>estrangeiro!</strong></p>`
             }
         }
     </script>
