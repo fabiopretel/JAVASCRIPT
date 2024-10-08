@@ -5,21 +5,34 @@
     font-size: 1em;
     font-weight: normal;
 }
-body, html{
+body{
     background-color: rgb(70, 142, 236);
 }
 header{
-    font-size: 2em;
+    font-size: 2.5em;
     color: white;
     text-align: center;
+}
+header > h1{
+    font-weight: bolder;
 }
 section{
     background-color: white;
     border-radius: 10px;
+    font-size: 1.2em;
+    text-align: center;
     padding: 10px;
     width: 450px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.450);
+}
+div{
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+section > div > img{
+    border-radius: 50%;
 }
 footer{
     color: white;
