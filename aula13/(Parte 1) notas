@@ -1,0 +1,20 @@
+function comerPizza(){
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()                // limitado em 8 fatias
+    comerFatia()
+    comerFatia()
+    comerFatia()
+    comerFatia()
+}
+
+function comerPizza(){
+    while(temFatia()){
+        comerFatia()            // para qualquer tamanho de pizza
+    }
+}
+
+do{
+    //bloco                        teste lógico no final
+} while(condição)
