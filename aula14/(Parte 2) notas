@@ -1,0 +1,13 @@
+for(inicio;teste;incremento){
+    //bloco
+}
+
+var a = 1
+while(a <= 10){
+    //bloco
+    a++
+}
+
+for(var a=1; a<= 10; a++){
+    //bloco
+}
