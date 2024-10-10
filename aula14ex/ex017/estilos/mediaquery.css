@@ -12,11 +12,12 @@ Grandes telas: acima de 1200px
 
 @media screen and (min-width: 768px) and (max-width: 992px){ /*Tablet*/
     section{
-        width: 650px;
+        width: 500px;
     }
 }
 @media screen and (min-width: 992px){ /*Desktop ou Maiores*/
     section{
         width: 800px;
+        text-align: center;
     }
 }

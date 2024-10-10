@@ -5,22 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/estilo.css">
     <link rel="stylesheet" href="estilos/mediaquery.css">
-    <title>Modelo de Exercício</title>
+    <title>Tabuada</title>
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
         <div>
-            testando...
+            <p>
+                Número: <input type="number" name="txtn" id="txtn" style="width: 100px;">
+                <input type="button" value="Gerar Tabuada" onclick="tabuada()">
+            </p>
         </div>
         <div>
-            testando...
+            <select name="tabuada" id="seltab" size="10">
+                <option>Digite um número acima </option>
+            </select>
         </div>
     </section>
     <footer>
-        <p>&copy;CursoemVideo</p>
+        <p>&copy; CursoemVideo</p>
     </footer>
     <script src="script.js"></script>
 </body>
