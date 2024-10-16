@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somas</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+        }
+        body, html{
+            margin: 0px;
+            padding: 0px;
+            background-color: #042940;
+        }
+        #caixa{
+            width: 320px;
+            height: 320px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            box-shadow: -1px 1px 5px #000000;
+            background-color: #9FC131;
+        }
+        .numero{
+            width: 100px;
+            height: 100px;
+
+            text-align: center;
+            font-size: 2em;
+            font-weight: bolder;
+
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.6);
+            background-color: #f0efac;
+        }
+        .numero:hover{
+            transform: translate(-1px, 1px);
+            transition: 0.15s;
+        }
+        .soma{
+            width: 100px;
+            height: 50px;
+
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bolder;
+
+            background-color: #005C53;
+            color: white;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50px;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.6);
+        }
+        .soma:hover{
+            background-color: white;
+            color: #005C53;
+            transform: translate(1px, 1px);
+            transition: 0.15s;
+        }
+    </style>
+</head>
+<body>
+    <div id="caixa">
+        <div id="caixa2" style="padding-bottom: 30px;">
+            <input class="numero" type="number" name="txt1" id="txt1"> +
+            <input class="numero" type="number" name="txt2" id="txt2">
+        </div>
+        <input class="soma" type="button" value="Somar" onclick="somar()">
+    </div>
+    <script>
+        function somar(){
+            var num1 = document.getElementById('txt1')
+            var num2 = document.getElementById('txt2')
+            var res = document.getElementById('caixa')
+
+            var n1 = Number(num1.value)
+            var n2 = Number(num2.value)
+            var s = n1 + n2
+
+            res.style.fontSize = '7em'
+            res.style.fontWeight = 'bolder'
+            res.innerHTML = `${s}`
+        }
+    </script>
+</body>
+</html>
