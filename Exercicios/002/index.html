@@ -4,12 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Número</title>
+    <style>
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3em;
+            font-weight: bolder;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <p id="texto"></p>
     <script>
-        var n = window.prompt('Digite um número: ')
+        var num = window.prompt('Digite um número: ')
         var txt = document.getElementById('texto')
+        var n = Number(num)
+
+        txt.innerHTML = `O número informado foi ${n}.`
     </script>
 </body>
 </html>
